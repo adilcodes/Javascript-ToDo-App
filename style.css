@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    font-family: sans-serif;
+}
+
+/* Designing Left Section */
+
+.left-sec{
+    height: 500px;
+    background-color: #fff;
+}

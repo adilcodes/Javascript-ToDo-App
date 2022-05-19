@@ -13,7 +13,22 @@
     <title>TODO App</title>
 </head>
 <body>
-    
+    <div class="left-sec col-md-4 p-4">
+        <h3 class="mb-4">Add New Task</h3>
+        <form id="form">
+            <p class="form-label">Task Title</p>
+            <input type="text" name="TaskTitle" class="form-control" id="taskInput">
+            <div id="msg"></div>
+            <br />
+            <p class="form-label">Due Date</p>
+            <input type="date" name="DueDate" class="form-control" id="dateInput">
+            <br />
+            <p class="form-label">Description</p>
+            <textarea name="Description" id="textarea" cols="30" rows="5" class="form-control"></textarea>
+            <button class="btn btn-primarybtn btn-primary mt-3">Add Task</button>
+        </form>
+    </div>
+    <div class="right-sec col-md-4"></div>
     
     
     <!-- Bootstrap Js CDN -->
