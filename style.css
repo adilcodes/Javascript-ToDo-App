@@ -4,7 +4,7 @@ body{
     align-items: center;
     min-height: 100vh;
     /* overflow: hidden; */
-    background-color: #e5e5e5;
+    background-color: #ecbfbfb3;
     font-family: sans-serif;
 }
 
@@ -20,6 +20,7 @@ body{
 .right-sec{
     height: 500px;
     background-color: rgb(237, 34, 85);
+    border-bottom: 10px solid transparent;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -35,8 +36,8 @@ body{
     gap: 15px;
 }
 #tasks div{
-    border: 3px solid #abcea1;
-    background-color: #e2eede;
+    border: 3px solid rgba(51, 51, 51, 0.898);
+    background-color: #fff;
     border-radius: 6px;
     padding: 5px;
     display: grid;
@@ -58,8 +59,5 @@ body{
 @media only screen and (max-width: 767px) {
     .con{
         border: 10px solid transparent;
-    }
-    .right-sec{
-        border-bottom: 3px solid #000;
     }
 }
