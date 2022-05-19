@@ -14,3 +14,41 @@ body{
     height: 500px;
     background-color: #fff;
 }
+
+/* Designing Right Section */
+
+.right-sec{
+    height: 500px;
+    background-color: rgb(237, 34, 85);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.right-sec::-webkit-scrollbar {
+    display: none;
+  }
+.right-sec #tasks{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    gap: 15px;
+}
+#tasks div{
+    border: 3px solid #abcea1;
+    background-color: #e2eede;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+    width: 100%;
+}
+#tasks div .options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#tasks div .options i{
+    cursor: pointer;
+}
