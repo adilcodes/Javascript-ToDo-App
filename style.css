@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #e5e5e5;
     font-family: sans-serif;
 }
@@ -51,4 +51,15 @@ body{
 }
 #tasks div .options i{
     cursor: pointer;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    .con{
+        border: 10px solid transparent;
+    }
+    .right-sec{
+        border-bottom: 3px solid #000;
+    }
 }

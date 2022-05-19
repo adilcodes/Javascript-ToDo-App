@@ -13,77 +13,82 @@
     <title>TODO App</title>
 </head>
 <body>
-    <div class="left-sec col-md-4 p-4">
-        <h3 class="mb-4">Add New Task</h3>
-        <form id="form">
-            <p class="form-label">Task Title</p>
-            <input type="text" name="TaskTitle" class="form-control" id="taskInput">
-            <div id="msg"></div>
-            <br />
-            <p class="form-label">Due Date</p>
-            <input type="date" name="DueDate" class="form-control" id="dateInput">
-            <br />
-            <p class="form-label">Description</p>
-            <textarea name="Description" id="textarea" cols="30" rows="5" class="form-control"></textarea>
-            <button class="btn btn-primarybtn btn-primary mt-3">Add Task</button>
-        </form>
-    </div>
-    <!-- End Of Left Section -->
-    <div class="right-sec col-md-4 p-4">
-        <h3 class="mb-4">Your Tasks</h3>
-        <div id="tasks">
-            <div class="p-2">
-                <span class="fw-bold fs-5">Hello World</span>
-                <span>2022-05-13</span>
-                <p>Hello This is a test</p>
-                <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </span>
+    <div class="con container-fluid">
+        <div class="row justify-content-center">
+            <!-- Left Section -->
+            <div class="left-sec col-md-4 p-4">
+                <h3 class="mb-4">Add New Task</h3>
+                <form id="form">
+                    <p class="form-label">Task Title</p>
+                    <input type="text" name="TaskTitle" class="form-control" id="taskInput">
+                    <div id="msg"></div>
+                    <br />
+                    <p class="form-label">Due Date</p>
+                    <input type="date" name="DueDate" class="form-control" id="dateInput">
+                    <br />
+                    <p class="form-label">Description</p>
+                    <textarea name="Description" id="textarea" cols="30" rows="5" class="form-control"></textarea>
+                    <button class="btn btn-primarybtn btn-primary mt-3">Add Task</button>
+                </form>
             </div>
+            <!-- Right Section -->
+            <div class="right-sec col-md-4 p-4">
+                <h3 class="mb-4">Your Tasks</h3>
+                <div id="tasks">
+                    <div class="p-2">
+                        <span class="fw-bold fs-5">Hello World</span>
+                        <span>2022-05-13</span>
+                        <p>Hello This is a test</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
 
-            <div class="p-2">
-                <span class="fw-bold fs-5">Hello World</span>
-                <span>2022-05-13</span>
-                <p>Hello This is a test</p>
-                <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </span>
-            </div>
+                    <div class="p-2">
+                        <span class="fw-bold fs-5">Hello World</span>
+                        <span>2022-05-13</span>
+                        <p>Hello This is a test</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
 
-            <div class="p-2">
-                <span class="fw-bold fs-5">Hello World</span>
-                <span>2022-05-13</span>
-                <p>Hello This is a test</p>
-                <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </span>
-            </div>
+                    <div class="p-2">
+                        <span class="fw-bold fs-5">Hello World</span>
+                        <span>2022-05-13</span>
+                        <p>Hello This is a test</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
 
-            <div class="p-2">
-                <span class="fw-bold fs-5">Hello World</span>
-                <span>2022-05-13</span>
-                <p>Hello This is a test</p>
-                <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </span>
-            </div>
+                    <div class="p-2">
+                        <span class="fw-bold fs-5">Hello World</span>
+                        <span>2022-05-13</span>
+                        <p>Hello This is a test</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
 
-            <div class="p-2">
-                <span class="fw-bold fs-5">Hello World</span>
-                <span>2022-05-13</span>
-                <p>Hello This is a test</p>
-                <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
-                </span>
+                    <div class="p-2">
+                        <span class="fw-bold fs-5">Hello World</span>
+                        <span>2022-05-13</span>
+                        <p>Hello This is a test</p>
+                        <span class="options">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
+            <!-- Right Section End -->
+        </div> <!-- Row End -->
+    </div> <!-- Container End -->
     
     <!-- Bootstrap Js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
