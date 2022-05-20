@@ -11,14 +11,16 @@ body{
 /* Designing Left Section */
 
 .left-sec{
-    height: 500px;
+    height: 527px;
     background-color: #fff;
 }
-
+.left-sec #form #msg{
+    color: red;
+}
 /* Designing Right Section */
 
 .right-sec{
-    height: 500px;
+    height: 527px;
     background-color: rgb(237, 34, 85);
     border-bottom: 10px solid transparent;
     overflow-y: scroll;
