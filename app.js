@@ -33,5 +33,35 @@ let acceptData = () => {
         textArea: textArea.value,
     });
     console.log(data);
+
+    createTask();
 }
 
+// Creating Tasks
+
+let createTask = () => {
+    data.map((currentObj, objIndex) => {
+        return (tasks.innerHTML += `
+            <div class="p-2" id = "${objIndex}">
+                <span class="fw-bold fs-5">${currentObj.task}</span>
+                <span>${currentObj.date}</span>
+                <p>${currentObj.textArea}</p>
+                <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </span>
+            </div>
+            `
+        );
+    });
+
+    // Function to reset the form
+
+    let resetForm = () => {
+        taskInput.value = "";
+        dateInput.value = "";
+        textArea.value = "";
+    };
+
+    resetForm();
+}

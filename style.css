@@ -32,9 +32,8 @@ body{
   }
 .right-sec #tasks{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: grid;
-    place-items: center;
     gap: 15px;
 }
 #tasks div{
