@@ -40,6 +40,7 @@ let acceptData = () => {
 // Creating Tasks
 
 let createTask = () => {
+    tasks.innerHTML = "";
     data.map((currentObj, objIndex) => {
         return (tasks.innerHTML += `
             <div class="p-2" id = "${objIndex}">
@@ -47,8 +48,8 @@ let createTask = () => {
                 <span>${currentObj.date}</span>
                 <p>${currentObj.description}</p>
                 <span class="options">
-                    <i class="fas fa-edit"></i>
-                    <i onclick="deleteTask(this)" class="fas fa-trash-alt"></i>
+                    <i onclick = "editTask(this)" class="fas fa-edit"></i>
+                    <i onclick = "deleteTask(this)" class="fas fa-trash-alt"></i>
                 </span>
             </div>
             `
@@ -71,4 +72,15 @@ let createTask = () => {
 let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
     data.splice(e.parentElement.parentElement.id,1);
+}
+
+// Edit Tasks
+
+let editTask = (e) => {
+    let selectTask = e.parentElement.parentElement;
+    taskInput.value = selectTask.children[0].innerHTML;
+    dateInput.value = selectTask.children[1].innerHTML;
+    textArea.value = selectTask.children[2].innerHTML;
+
+    deleteTask(e);
 }
