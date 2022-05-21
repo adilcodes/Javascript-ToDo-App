@@ -89,3 +89,11 @@ let editTask = (e) => {
 
     deleteTask(e);
 }
+
+// Retrieve Data from local storage
+
+(() => {
+    data = JSON.parse(localStorage.getItem("data")) || [];
+    console.log(data);
+    createTask();
+})();
