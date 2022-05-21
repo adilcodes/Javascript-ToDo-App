@@ -30,7 +30,7 @@ let acceptData = () => {
     data.push({
         task: taskInput.value,
         date: dateInput.value,
-        textArea: textArea.value,
+        description: textArea.value,
     });
     console.log(data);
 
@@ -45,10 +45,10 @@ let createTask = () => {
             <div class="p-2" id = "${objIndex}">
                 <span class="fw-bold fs-5">${currentObj.task}</span>
                 <span>${currentObj.date}</span>
-                <p>${currentObj.textArea}</p>
+                <p>${currentObj.description}</p>
                 <span class="options">
                     <i class="fas fa-edit"></i>
-                    <i class="fas fa-trash-alt"></i>
+                    <i onclick="deleteTask(this)" class="fas fa-trash-alt"></i>
                 </span>
             </div>
             `
@@ -64,4 +64,11 @@ let createTask = () => {
     };
 
     resetForm();
+}
+
+// Delete Tasks
+
+let deleteTask = (e) => {
+    e.parentElement.parentElement.remove();
+    data.splice(e.parentElement.parentElement.id,1);
 }
