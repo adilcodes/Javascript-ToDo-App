@@ -32,6 +32,10 @@ let acceptData = () => {
         date: dateInput.value,
         description: textArea.value,
     });
+
+    //Storing Data in Local Storage
+
+    localStorage.setItem("data", JSON.stringify(data));
     console.log(data);
 
     createTask();
@@ -72,6 +76,7 @@ let createTask = () => {
 let deleteTask = (e) => {
     e.parentElement.parentElement.remove();
     data.splice(e.parentElement.parentElement.id,1);
+    localStorage.setItem("data", JSON.stringify(data));
 }
 
 // Edit Tasks
