@@ -53,7 +53,7 @@ let createTask = () => {
                 <p>${currentObj.description}</p>
                 <span class="options">
                     <i onclick = "editTask(this)" class="fas fa-edit"></i>
-                    <i onclick = "deleteTask(this)" class="fas fa-trash-alt"></i>
+                    <i onclick = "deleteTask(this); createTask();" class="fas fa-trash-alt"></i>
                 </span>
             </div>
             `
